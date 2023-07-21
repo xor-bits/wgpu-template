@@ -13,7 +13,7 @@
 resolution = [ 1280, 720 ]
 
 # forced title for the window
-title = "Voxeltest"
+title = "WGPU Template"
 
 # force a specific windowing protocol (only on Unix):
 #force_wayland = true

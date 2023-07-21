@@ -238,7 +238,7 @@ impl Default for WindowSettings {
     fn default() -> Self {
         Self {
             resolution: (1280, 720),
-            title: "Voxeltest".into(),
+            title: "WGPU Template".into(),
             force_wayland: false,
             force_x11: false,
         }
