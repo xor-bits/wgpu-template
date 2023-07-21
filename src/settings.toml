@@ -1,0 +1,48 @@
+# unset fields use the default values
+#
+# unrecognized fields give warnings
+#
+# for errors or warnings about this settings file:
+# read the stdout or the logfile in this file's directory
+#
+# at the moment, any edits while the game is running will be overwritten
+
+# window specific settings
+[window]
+# initial window resolution
+resolution = [ 1280, 720 ]
+
+# forced title for the window
+title = "Voxeltest"
+
+# force a specific windowing protocol (only on Unix):
+#force_wayland = true
+#force_x11 = true
+
+# pick a GPU based on this
+# available modes: "HighPerformance", "LowPower"
+gpu_preference = "HighPerformance"
+
+# force the use of a fallback renderer,
+# usually a "software" renderer
+force_software_rendering = false
+
+# auto vertical sync mode,
+# (Fifo is the (vsync) fallback that's always there)
+# true: FifoRelaxed -> Fifo
+# false: Immediate -> Mailbox -> Fifo
+vsync = true
+
+# graphics APIs that WGPU is allowed to use
+[window.allowed_backends]
+# tier 1 in WGPU
+# (unsupported backends (like dx12 in Linux) are ignored)
+vulkan = true
+metal = true
+dx12 = true
+webgpu = true
+
+# tier 2 in WGPU
+# (probably buggy)
+gl = false
+dx11 = false
