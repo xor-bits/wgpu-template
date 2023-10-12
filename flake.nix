@@ -1,5 +1,5 @@
 {
-  description = "Neo OpenTTD";
+  description = "wgpu-template";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -47,7 +47,7 @@
 
         # `nix build`
         packages.default = rustPlatform.buildRustPackage {
-          name = "vapour";
+          name = "wgpu-template";
 
           src = ./.;
 
